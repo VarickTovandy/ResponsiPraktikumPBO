@@ -17,16 +17,6 @@ public class TotalGaji extends javax.swing.JFrame {
     public TotalGaji() {
         initComponents();
         fieldLembur.setVisible(false);
-        HitungGaji();
-    }
-    
-    public void HitungGaji() {
-        double gaji = Double.parseDouble(fieldGaji.getText());   
-        double lembur = Double.parseDouble(fieldLembur.getText());
-        
-        double TotalGaji = gaji + lembur * 25000;
-        String total = String.valueOf(TotalGaji);
-        fieldTotalGaji.setText(total);
     }
     
     /**

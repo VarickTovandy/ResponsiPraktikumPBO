@@ -233,7 +233,12 @@ public class Data extends javax.swing.JFrame {
         a.fieldNama.setText(nama);
         a.fieldUsia.setText(usia);
         a.fieldGaji.setText(gaji);
-        a.fieldLembur.setText(lembur);
+        double gajii = Double.parseDouble(fieldGaji.getText());   
+        double lemburr = Double.parseDouble(fieldLembur.getText());
+        
+        double TotalGaji = gajii + lemburr * 25000;
+        String total = String.valueOf(TotalGaji);
+        a.fieldTotalGaji.setText(total);
         
         a.setVisible(true);
         setVisible(false);
